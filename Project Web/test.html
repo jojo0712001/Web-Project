@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <link rel="stylesheet" href="text.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="portfolio-items-wrapper">
+          
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(limages/cupcake5.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="title-wrapper"><h2>LOTUS<br> CUPCAKE</h2></div>
+                            <div class="subtitle">Adrastia veteres appellamus: vel utinam huius aliquotiens superpositum veteres superpositum tradunt tradunt Adrastia utinam ut modi quadam ultrix tradunt impiorum.</div>
+                        </div>
+                    </div>
+          
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(limages/cupcake6.jpg)"></div>
+                        <div class="img-text-wrapper">
+                            <div class="title-wrapper"><h2>NUTS & CREAMY<br>CUPCAKE</h2></div>
+                            <div class="subtitle">Adrastia veteres appellamus: vel utinam huius aliquotiens superpositum veteres superpositum tradunt tradunt Adrastia utinam ut modi quadam ultrix tradunt impiorum.</div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-client">
+                
+            <img src="clients/number-two.jpeg" >
+
+            <h5>Johanne Scemama</h5>
+
+            <div class="second-comment">
+                <p style="font-size:85%;">
+                    Light and very tasty. The Lotus Cupcake <br> 
+                    and Ferrero Rocher one were good and surprising.
+                    
+                </p>
+            </div>
+
+        </div>
+    
+    </body>
+
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+      
+        portfolioItems.forEach(portfolioItem => {
+          portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.add('image-blur');
+          });
+      
+          portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('image-blur');
+          });
+        });
+      
+    </script>
+
+</html>
+
+
+

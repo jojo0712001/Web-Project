@@ -1,0 +1,396 @@
+body{
+    position: auto ;
+    padding: 35px;
+}
+
+.header {
+    background-color: rgb(255, 215, 252);
+    padding: 10px 5px 5px 5px;
+    position: auto;
+    top:0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.middle-top-social-media {
+    display:flex;
+}
+
+.middle-top-social-media div {
+    margin: 3px;
+}
+
+.middle-top-social-media img {
+    filter:grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+.middle-top-social-media img:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+.top-page > .middle-top-social-media > div {
+    margin-right: 20px;
+}
+
+.middle-top-contact {
+    display: flex;
+    color: #8a8a8a;
+}
+
+.top-page > .middle-top-contact > div {
+    margin-right: 8px;
+}
+
+.right-top:hover {
+    color :rgb(159, 70, 223);
+    transition: 0.2s ease-in;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.img-on-top {
+    display: none;
+}
+
+@media screen and (max-width: 480px){
+    .img-on-top {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        position: center;
+        align-items: center;
+        justify-self: center;
+    }
+}
+
+.img-on-top .texte{
+    color:lightpink;
+    font-size: 30px;
+    line-height: 1.5em;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    position:absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:100%
+}
+
+.img-on-top .more {
+    color:rgb(159, 70, 223);
+    line-height: 1.5em;
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+    position:absolute;
+    top: 40%;
+    right: auto;
+    width: 100%;
+}
+
+.more:hover {
+    color :rgba(128, 255, 0, 0.637);
+    transition: 0.2s ease-in;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 10px;
+    color: rgb(99, 99, 99);
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}  
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(212, 212, 212, 0.966);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(255, 215, 252);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.first-part{
+    padding: 80px;
+}
+
+.about-us {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color:yellowgreen;
+}
+
+.title-one{
+    margin-bottom: 35px;
+}
+
+.paragraph-one{
+    margin-bottom: 25px;
+}
+
+.years{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.first-number{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.fourth-image{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.title-two{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.option-all:hover {
+    color :rgba(128, 255, 0, 0.637);
+    transition: 0.2s ease-in;
+}
+
+.option-basics:hover {
+    color :rgba(128, 255, 0, 0.637);
+    transition: 0.2s ease-in;
+}
+
+.option-specials:hover {
+    color :rgba(128, 255, 0, 0.637);
+    transition: 0.2s ease-in;
+}
+
+.view-all{
+    color: rgb(160, 160, 160);
+}
+
+.container{
+    margin-bottom: 50px;
+}
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+    height:500px;
+    width: 420px;
+    margin: auto;
+}
+  
+.portfolio-img-background {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:500px;
+    width: 420px;
+    margin: 8px;
+}
+
+@media screen and (max-width: 964px){
+    .portfolio-item-wrapper {
+        height: 375px;
+        width: 330px;
+        margin-bottom: 30px;
+    }
+    
+    .portfolio-img-background {
+        height: 375px;
+        width: 330px;
+        margin-bottom: 30px;
+        margin: 8px;
+    }
+
+    .img-text-wrapper .title-wrapper {
+        font-size: 12px;
+    }
+
+    .img-text-wrapper:hover .subtitle {
+        color: rgb(6, 129, 123);
+        font-weight: 300;
+        margin-bottom: 10px;
+    
+    }
+}
+
+@media screen and (max-width: 720px){
+    .portfolio-items-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    }
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    color: transparent;
+}
+
+.img-text-wrapper .title-wrapper {
+    color:rgb(251, 217, 255);
+    margin-top: 20px;
+}
+
+.image-blur {
+    transition: 1s;
+    filter: brightness(20%);
+}
+  
+.img-text-wrapper:hover .subtitle {
+    color: rgb(193, 116, 196);
+    font-weight: 300;
+    margin-bottom: 80px;
+
+}
+
+.title-wrapper img {
+    width: 50%;
+    margin: auto;
+}
+
+.title-three {
+    margin-left: 100px;
+}
+
+.clients {
+    background-color: rgb(247, 247, 247);
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+.clients h5 {
+    margin-left: 15px;
+}
+
+.clients img {
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.both-clients {
+    display: flex;
+    justify-content: center;
+
+}
+
+.first-client {
+    background-color: white;
+    margin-right: 10px;
+}
+
+.first-comment {
+    margin-left: 15px;
+    color: grey;
+}
+
+.second-client {
+    background-color: white;
+}
+
+.second-comment {
+    margin-left: 15px;
+    color: grey;
+}
+
+.bottom {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logos-bottom {
+    display: flex;
+}
+
+.logos-bottom img {
+    margin: 3px;
+}
+
+.logos-bottom img {
+    filter:grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.logos-bottom img:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+.language:hover {
+    color :rgba(128, 255, 0, 0.637);
+    transition: 0.2s ease-in;
+}
+
+.location:hover {
+    color :rgba(128, 255, 0, 0.637);
+    transition: 0.2s ease-in;
+}
+
+.career:hover {
+    color :rgba(128, 255, 0, 0.637);
+    transition: 0.2s ease-in;
+}
+
+.about:hover {
+    color :rgba(128, 255, 0, 0.637);
+    transition: 0.2s ease-in;
+}
+
+.contact:hover {
+    color :rgba(128, 255, 0, 0.637);
+    transition: 0.2s ease-in;
+}
